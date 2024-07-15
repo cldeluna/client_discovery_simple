@@ -174,13 +174,6 @@ if __name__ == "__main__":
         epilog="Usage: ' python get_showcmds.py' ",
     )
 
-    # parser.add_argument(
-    #     "-d",
-    #     "--device",
-    #     help="Get show commands from this device (ip or FQDN) and save to file",
-    #     action="store",
-    #     default="",
-    # )
     parser.add_argument(
         "-t",
         "--device_type",
@@ -195,43 +188,6 @@ if __name__ == "__main__":
         action="store",
         default="22",
     )
-    # parser.add_argument(
-    #     "-o",
-    #     "--output_subdir",
-    #     help="Name of output subdirectory for show command files",
-    #     action="store",
-    #     default="local",
-    # )
-    # parser.add_argument(
-    #     "-s", "--show_cmd", help="Execute a single show command", action="store"
-    # )
-    # parser.add_argument(
-    #     "-n",
-    #     "--note",
-    #     action="store",
-    #     help="Short note to distinguish show commands. Ex. -pre or -post",
-    # )
-    # parser.add_argument(
-    #     "-m",
-    #     "--mfa",
-    #     action="store_true",
-    #     help="Multi Factor Authentication will prompt for VIP, MS Auth, Google auth, or other 2-Factor code",
-    #     default=False,
-    # )
-    # parser.add_argument(
-    #     "-c",
-    #     "--credentials",
-    #     action="store_true",
-    #     help="Set Credentials via Command Line interactively",
-    #     default="",
-    # )
-    # parser.add_argument(
-    #     "-f",
-    #     "--file_of_devs",
-    #     action="store",
-    #     help="Provide the full path to a text file containing an IP or FQDN on each line (see example_device_file.txt) "
-    #     "to execute show commands on multiple devices with the same credentials.",
-    #     default="",
-    # )
+
     arguments = parser.parse_args()
     main()

@@ -19,7 +19,6 @@ import yaml
 import os
 import re
 import dotenv
-import getpass
 
 
 def read_yaml(filename):
@@ -120,7 +119,7 @@ def main():
                 device_list.append(line.strip())
 
     # SAVING OUTPUT
-    output_dir = "local"
+    output_dir = os.path.join(os.path.expanduser("~"), "show_output")
     sub_dir(output_dir)
 
     # User has account without MFA
@@ -158,10 +157,10 @@ def main():
             # Filename
             basefn = f"{dev}_{datestamp}.txt"
 
-            output_dir = os.path.join(os.getcwd(), output_dir, basefn)
-            write_txt(output_dir, resp)
+            output_dir_fn = os.path.join(output_dir, basefn)
+            write_txt(output_dir_fn, resp)
 
-            print(f"\nSaving show command output to {output_dir}\n\n")
+            print(f"\nSaving show command output to {output_dir_fn}\n\n")
 
         else:
             print(f"\n\n\txxx Skip Device {dev} Type {devdict['device_type']}")

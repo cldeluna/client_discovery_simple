@@ -6,7 +6,7 @@
 
 ## Synopsis
 
-Simplified Netmiko utility to extract show commands from devices.
+Simplified Netmiko utility to extract show commands from devices. 
 
 
 
@@ -23,7 +23,8 @@ Updates:
 
 
 
-## Installation
+## Typical Installation 
+For use with torero, all of these steps automatically completed!
 
 1. Install Python (version 3.12)
 2. Clone or Download this repository

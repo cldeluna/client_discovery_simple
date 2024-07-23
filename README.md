@@ -10,7 +10,10 @@ Simplified Netmiko utility to extract show commands from devices.
 
 
 
-This repository is being simplified to use with torero.
+This repository is being simplified to use with torero and is the compation repository for the posts below:
+
+[Torero – Boots on the Ground Framework for Automation Sharing](https://gratuitous-arp.net/torero-for-sharing-your-network-automation/)
+
 
 Updates:
 
@@ -18,8 +21,6 @@ Updates:
 - Removing CDP Crawl script
 - Simplifying requirements
 - Removing command line arguments
-
-
 
 
 
